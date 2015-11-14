@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width" />
+<title>Flowery Home</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+<!-- phone -->
+<link href="css/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:320px)" />
+<!-- tablet -->
+<link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:321px) and (max-width:768px)" />
+<!-- desktop -->
+<link href="css/desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px)" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	function onIn(id){	
+		//example for get the things in web page in javascript
+		if(id=='about'||id=='gallery'||id=='contact'||id=='home'||id=='login'){
+			var menuBtn = document.getElementById(id);
+			menuBtn.style.backgroundColor="#e6def6";
+		}
+	}
+	function onOut(id){
+		if(id=='about'||id=='gallery'||id=='contact'||id=='home'||id=='login'){
+			var menuBtn1 = document.getElementById(id);
+			menuBtn1.style.backgroundColor="";
+		}
+	}
+	
+	var index =1;
+	function slideShow(){
+		var slideImg = document.getElementById("slide");
+		slideImg.src = "img/slide0"+index+".jpg";
+		index++;
+		setTimeout("slideShow()",5000);
+		if(index==6){
+			index = 1;
+		}
+	}
+	
+	onload = slideShow;
+	
+	function onImg(id){
+		if(id=='present'||id=='weddin'||id=='home'){
+			var detail1 = document.getElementById(id);
+			detail1.width="350";
+		}
+	}
+	function outImg(id){
+		if(id=='present'||id=='weddin'||id=='home'){
+			var detail2 = document.getElementById(id);
+			detail2.width="300";
+		}
+	}
+	
+	/*function toPurchase(){
+		
+	}*/
+
+</script>
+
+<style>
+      #map {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+	  
+    </script>
+    
+</head>
+
+<body>
+
+<!--start of header-->
+<div class="header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12" align="center"><img src="img/Logo01.png" class="img-responsive" width="600"/><br />
+        <img src="img/Logo02.png" class="img-responsive" width="300"/> <br />
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--end of header-->
+
+<div class="content1"> 
+  
+  <!--start of menu bar-->
+  <div class="menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="navbar navbar-default"> 
+            
+            <!--for mobile version menubar (as 3lines in menu button in phone) target the real menubar-->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <nav class="navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"  id="home"><a href="floweryHome.html" onmouseover="onIn('home')" onmouseout="onOut('home')"><strong>HOME</strong></a></li>
+                <li  id="about"><a href="#con4" onmouseover="onIn('about')" onmouseout="onOut('about')"><strong>ABOUT</strong></a></li>
+                <li  id="gallery"><a href="gallery.html" onmouseover="onIn('gallery')" onmouseout="onOut('gallery')"><strong>GALLERY</strong></a></li>
+                <li  id="contact"><a href="#con5" onmouseover="onIn('contact')" onmouseout="onOut('contact')"><strong>CONTACT</strong></a></li>
+                <li  id="login" ><a href="login.html"  onmouseover="onIn('login')" onmouseout="onOut('login')"><strong>LOGIN</strong></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!--end of menu bar-->
+ <!--start of content2--> 
+  <div class="content2">
+ <!--start of slide--> 
+    <div class="slider" align="center" > <img id="slide" src="img/slide01.jpg" width="80%" /> </div>
+ <!--end of slide-->
+ <!--start of purchase--> 
+    <div class="order" align="center"  >
+    <div class="container" >
+        <button class="text-uppercase button" onClick="self.location='login.html'"><strong>Purchase</strong></button>
+    </div>
+    </div>
+ <!--end of purchase-->
+    </div>
+ <!--end of content2-->
+  
+ <!--start of content3--> 
+  <div class="content3">
+  	<div class="container">
+    <div class="row">
+      <div class="col-md-5" align="left"> <img src="img/present.png" id="present" onmouseover="onImg('present')" onmouseout="outImg('present')" class="img-responsive" width="300"/> </div>
+      <div class="col-md-7">
+      	<div class="detail1" align="right">
+      	      <p><a href="login.html" ><strong>SEND FLOWERS</strong></a></p>
+    	</div>
+      </div>
+    </div>
+    <div class="row">
+       <div class="col-md-7">
+       		<div class="detail2" align="left">
+      	      <p><a href="login.html" ><strong>WEDDINGS AND EVENTS</strong></a></p>
+    	</div>
+       </div>
+       <div class="col-md-5" align="right"> <img src="img/wedding.png" id="weddin" onmouseover="onImg('weddin')" onmouseout="outImg('weddin')" class="img-responsive" width="300"/> </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5" align="left"> <img src="img/home.png" id="home" onmouseover="onImg('home')" onmouseout="outImg('home')" class="img-responsive" width="300"/> </div>
+      <div class="col-md-7">
+      	<div class="detail3" align="right">
+      	      <p><a href="login.html" ><strong>HOME DECOR</strong></a></p>
+    	</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--end of content3-->
+ <!--start of content4--> 
+  <div class="content4" id="con4">
+  
+  	<div class="about">
+  		<p><strong>~ABOUT US~</strong></p>
+  	</div>
+    
+    <div class="history">
+      <p>Established in 2010 with more than 5 years of experience in the floral industry, we at Flowery Homes even though a small family business, is passionate about what we do.<br />
+    
+   		 We have our own nursery in our home garden in Bandarawela where we pay attention to detail in producing only the finest 							quality flowers to complement our personal services and competitive prices.<br />
+    
+    		Handpicked high quality flowers are used to create unique and breathtaking décor. We listen to your requirements to ensure 	you feel special, creating a unique package to match your personality.<br />
+    
+   		 Flowery Homes extends floral services whether it is classic, modern or contemporary retaining individuality and gracefulness to suit your special days like Weddings,Birthdays and Anniversaries, Office and school functions(Podiums, Pahana, Baskets and Garlands),Parties with delivery services.</p>
+  </div>
+   
+  </div>
+  <!--end of content4-->
+
+<!--start of content5--> 
+<div class="content5" id="con5"> 
+	<div class="contact" align="center">
+         <p><strong>~CONTACT US~</strong></p>
+    </div>
+   <div class="container">
+    <div class="row">
+      <div class="col-md-6" align="left">   
+          <div class="address" align="left">
+                <p><strong>Flowery Homes</strong></p>
+                <p>No. 220,<br />High Level Road,<br />Colombo 05.<br /><br />
+                
+                Hotline: (+94) 715 655 765<br />
+                
+                Tel: (+94) 112 555 552 | (+94) 773 656 876<br />
+                
+                Email: sales@floweryhomes.net</p>
+          </div>
+	</div>
+    
+    <div class="col-md-6" align="left">
+		<div id="map"></div>
+    </div>
+   </div>
+  </div>
+</div>
+ <!--end of content5-->
+ 
+ <!--start of content6--> 
+<div class="content6" id="con6">
+	<div class="container">
+    	<div class="row">
+      		<div class="col-md-6" align="left">
+            	<img src="img/Logo01.png" class="img-responsive" width="300"/>
+            </div>
+            <div class="col-md-6">
+            	<div class="join" align="center">
+         			<p>~Join us on~</p>
+                </div>
+                    <div class="container">
+    					<div class="row">
+     						<div class="col-md-2" align="right"> <a href="https://www.facebook.com"><img src="img/icon1.png" id="fb" class="img-responsive" width="50"/> </a></div>
+                            <div class="col-md-2" align="center"> <a href="https://twitter.com/"><img src="img/icon2.png" id="twit" class="img-responsive" width="50"/></a></div>
+                            <div class="col-md-2" align="left"> <a href="https://www.linkedin.com"> <img src="img/icon3.png" id="lin" class="img-responsive" width="50"/></a> </div>
+   						</div>
+                    </div>
+            </div>
+         </div>
+    </div>  
+</div>
+<!--end of content6-->
+
+ <!--start of content7--> 
+<div class="content7" id="con7">
+	<br />
+    <br />
+    <br />
+</div>
+<!--end of content7-->
+</div>
+<!--end of content1-->
+</body>
+</html>

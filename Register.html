@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width" />
+<title>Register Page</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+<!-- desktopLogin -->
+<link href="css/desktopLogin.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px)" />
+<!-- phoneLogin -->
+<link href="css/phoneLogin.css" rel="stylesheet" type="text/css" media="only screen and (max-width:320px)" />
+<!-- tabletLogin -->
+<link href="css/tabletLogin.css" rel="stylesheet" type="text/css" media="only screen and (min-width:321px) and (max-width:768px)" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	function onIn(id){	
+		//example for get the things in web page in javascript
+		if(id=='about'||id=='gallery'||id=='contact'||id=='home'||id=='login'){
+			var menuBtn = document.getElementById(id);
+			menuBtn.style.backgroundColor="#e6def6";
+		}
+	}
+	function onOut(id){
+		if(id=='about'||id=='gallery'||id=='contact'||id=='home'||id=='login'){
+			var menuBtn1 = document.getElementById(id);
+			menuBtn1.style.backgroundColor="";
+		}
+	}
+	function validate(){
+		var unElement = document.getElementById("un");
+		var pwElement = document.getElementById("pw");
+		var pwElement = document.getElementById("em");
+		var pwElement = document.getElementById("cpw");
+	} 
+</script>
+
+</head>
+
+<body>
+<!--start of header-->
+<div class="header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12" align="center"><img src="img/Logo01.png" class="img-responsive" width="600"/><br />
+        <img src="img/Logo02.png" class="img-responsive" width="300"/> <br />
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--end of header-->
+
+<div class="content1"> 
+  
+  <!--start of menu bar-->
+  <div class="menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="navbar navbar-default"> 
+            
+            <!--for mobile version menubar (as 3lines in menu button in phone) target the real menubar-->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <nav class="navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li id="home"><a href="floweryHome.html" onmouseover="onIn('home')" onmouseout="onOut('home')"><strong>HOME</strong></a></li>
+                <li  id="about"><a href="#con4" onmouseover="onIn('about')" onmouseout="onOut('about')"><strong>ABOUT</strong></a></li>
+                <li  id="gallery"><a href="gallery.html" onmouseover="onIn('gallery')" onmouseout="onOut('gallery')"><strong>GALLERY</strong></a></li>
+                <li  id="contact"><a href="#con5" onmouseover="onIn('contact')" onmouseout="onOut('contact')"><strong>CONTACT</strong></a></li>
+                <li  class="active"  id="login" ><a href="login.html"  onmouseover="onIn('login')" onmouseout="onOut('login')"><strong>LOGIN</strong></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!--end of menu bar-->
+   
+   <!--start of content2--> 
+  <div class="content2">
+  		<div class="register" align="left">
+         			<p>CREATE ACCOUNT</p>
+        </div>
+        <div class="formReg" align="left">
+        	<form action="abc.jsp" onsubmit="return validate()"> 
+            	<label>Email:</label><br />
+                <input type="text" id="em" /><br /> 
+                <label>Usename:</label><br />
+                <input type="text" id="un" /><br />
+                <label>Password:</label><br />
+                <input type="text" id="pw" /><br />
+                <label>Confirm Password:</label><br />
+                <input type="text" id="cpw" />
+            </form>
+            <div class="regBtn" align="center">
+            <button type="submit"  value="Register" class="text-uppercase button" onClick="self.location='floweryHome.html'"><strong>Register</strong></button><br /><br />
+            </div>
+         </div>
+  </div>
+   <!--end of content2-->  
+ <!--start of content6--> 
+<div class="content6" id="con6">
+	<div class="container">
+    	<div class="row">
+      		<div class="col-md-6" align="left">
+            	<img src="img/Logo01.png" class="img-responsive" width="300"/>
+            </div>
+            <div class="col-md-6">
+            	<div class="join" align="center">
+         			<p>~Join us on~</p>
+                </div>
+                    <div class="container">
+    					<div class="row">
+     						<div class="col-md-2" align="right"> <a href="https://www.facebook.com"><img src="img/icon1.png" id="fb" class="img-responsive" width="50"/> </a></div>
+                            <div class="col-md-2" align="center"> <a href="https://twitter.com/"><img src="img/icon2.png" id="twit" class="img-responsive" width="50"/></a></div>
+                            <div class="col-md-2" align="left"> <a href="https://www.linkedin.com"> <img src="img/icon3.png" id="lin" class="img-responsive" width="50"/></a> </div>
+   						</div>
+                    </div>
+            </div>
+         </div>
+    </div>  
+</div>
+<!--end of content6-->
+
+ <!--start of content7--> 
+<div class="content7" id="con7">
+	<br />
+    <br />
+    <br />
+</div>
+<!--end of content7-->
+</div>
+</body>
+</html>

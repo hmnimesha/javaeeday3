@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+.section1{
+		background-color:#333333;
+		color:#CCC;
+}
+
+.section1 .glyphicon{
+	font-size:2em;
+	line-height:3em;	
+}
+.toll-free{
+	font-size:1.5em;
+	text-align:right;
+	margin-top:10px;
+}
+
+
+.toll-free .glyphicon{
+	font-size:1em;
+}
+
+.header-items .glyphicon{
+	font-size:2em;
+	float:left;
+	margin:0 10px;
+}
+
+
+.header-items li{
+	display:inline-block;
+	float:left;
+	padding:0;
+	margin:0 13px;
+}
+
+
+.header-items .top{
+	font-size:0.8em;
+}
+
+.header-items .bottom{
+	font-size:1.1em;
+}
+
+.section2 .navbar{
+	margin-top:1em;	
+}
+
+.section2 .search-bar{
+	background-color:#ffb300;
+	height:80px;	
+}
+
+.section2 input{
+	font-size:1.2em;	
+}
+
+.section2 button{
+	font-size:1.2em;	
+}
+
+.section4{
+	position:relative;
+}
+
+.section4{
+	background-color:#ffb300;
+	font-size:2em;
+	line-height:3.5em;
+	/*position:absolute;
+	top:0px;
+	left:-250px;
+	
+	width:500px;
+	transform:skew(20deg);*/
+}
+
+.button{
+	border:2px solid #000;
+	background-color:#000;
+	margin-top:1.5em;
+	padding:10px 15px;
+	font-size:0.8em;
+	line-height:1em;
+	color:#FFF;
+}
+
+.section5{
+	color: #000;
+	margin:3em;
+}
+
+.section5 .header{
+	font-size:2em;
+	margin-bottom:1.5em;
+}
+
+.section5 .description{
+	font-size:1.2em;
+	color:#999;
+}
+
+.yellow-bar{
+	border-bottom:4px solid #ffb300;	
+	float:left;
+	margin-top:1.4em;
+}
+
+
