@@ -1,28 +1,48 @@
 @charset "utf-8";
-.header{
-	background-image:url(../img/0101.jpg);
-	
-}
-
-.content1{
-	background-image:url(../img/0202.jpg);
+.header {
+	background-image: url(../img/0101.jpg);
 
 }
-
-.content6{
-	background-image:url(../img/trance2.png);
-	padding-top:2em;
-	padding-bottom:2em;	
+.content1 {
+	background-image: url(../img/0202.jpg);
+}
+.content2 {
+	background-image: url(../img/trance1.png);
+	margin-left:4em;
+	margin-right: 4em;
+	padding:2em;
+}
+.item1 {
+	text-align: center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 36px;
+	color: #9c0ed4;
 }
 
-.content7{
-	background-image:url(../img/border%20.png)
-		
+.item2 {
+	text-align: center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 36px;
+	color: #9c0ed4;
 }
 
-.join{
-	text-align:center;
-	font-family:"Arial Black", Gadget, sans-serif;
-	font-size:16px;
-	color:#FFF;	
+.item3 {
+	text-align: center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 36px;
+	color: #9c0ed4;
+}
+.content6 {
+	background-image: url(../img/trance2.png);
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.content7 {
+	background-image: url(../img/border%20.png)
+}
+.join {
+	text-align: center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 16px;
+	color: #FFF;
 }

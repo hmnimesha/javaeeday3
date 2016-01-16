@@ -37,9 +37,34 @@
 	margin-left:2em;
 	margin-right:2em;
 	padding-top:2em;
-	padding-bottom:2em;	
+	padding-bottom:2em;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:36px;
+	text-align:center;
+	color:#C9C;	
 }
 
+.detail1{
+	color:#FFF;
+}
+.detail12{
+	color:#FFF;
+	font-size:28px;
+}
+.detail2{
+	color:#FFF;
+}
+.detail22{
+	color:#FFF;
+	font-size:28px;
+}
+.detail3{
+	color:#FFF;
+}
+.detail32{
+	color:#FFF;
+	font-size:28px;
+}
 .content4{
 	background-image:url(../img/trance1.png);
 	margin-left:4em;
