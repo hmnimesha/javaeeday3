@@ -5,15 +5,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="viewport" content="width=device-width" />
-<title>Purchase Page</title>
+<title>Thank Page</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
-<!-- desktopPurchase -->
-<link href="css/desktopPurchase.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px)" />
-<!-- phonePurchase -->
-<link href="css/phonePurchase.css" rel="stylesheet" type="text/css" media="only screen and (max-width:320px)" />
-<!-- tabletPurchase -->
-<link href="css/tabletPurchase.css" rel="stylesheet" type="text/css" media="only screen and (min-width:321px) and (max-width:768px)" />
+<!-- desktopThank -->
+<link href="css/desktopThank.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px)" />
+<!-- phoneThank -->
+<link href="css/phoneThank.css" rel="stylesheet" type="text/css" media="only screen and (max-width:320px)" />
+<!-- tabletThank -->
+<link href="css/tabletThank.css" rel="stylesheet" type="text/css" media="only screen and (min-width:321px) and (max-width:768px)" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
@@ -31,10 +31,8 @@
 		}
 	}
 	function validate(){
-		var unElement = document.getElementById("qu");
-		var pwElement = document.getElementById("rd");
-		var pwElement = document.getElementById("la");
-		var pwElement = document.getElementById("an");
+		var unElement = document.getElementById("un");
+		var pwElement = document.getElementById("pw");
 	} 
 </script>
 
@@ -73,8 +71,8 @@
                 <li id="home"><a href="index.html" onmouseover="onIn('home')" onmouseout="onOut('home')"><strong>HOME</strong></a></li>
                 <li  id="about"><a href="index.html#con4" onmouseover="onIn('about')" onmouseout="onOut('about')"><strong>ABOUT</strong></a></li>
                 <li  id="gallery"><a href="gallery.html" onmouseover="onIn('gallery')" onmouseout="onOut('gallery')"><strong>GALLERY</strong></a></li>
-                <li  id="contact"><a href="index.html#con5" onmouseover="onIn('contact')" onmouseout="onOut('contact')"><strong>CONTACT</strong></a></li>
-                <li    id="login" ><a href="login.html"  onmouseover="onIn('login')" onmouseout="onOut('login')"><strong>LOGIN</strong></a></li>
+                <li  id="contact"><a href="<strong></strong>#con5" onmouseover="onIn('contact')" onmouseout="onOut('contact')"><strong>CONTACT</strong></a></li>
+                <li  id="login" ><a href="login.html"  onmouseover="onIn('login')" onmouseout="onOut('login')"><strong>LOGIN</strong></a></li>
               </ul>
             </nav>
           </div>
@@ -86,45 +84,23 @@
    
    <!--start of content2--> 
   <div class="content2">
-  
-  		<div class="register" align="left">
-         			<p>PURCHASE</p>
-                    
-        </div>
-        
-        <div class="purchaseForm">
-    		<div class="row">
-      			<div class="col-md-6" align="left">
-        <div class="formReg" align="left">
-        	<form action="abc.jsp" onsubmit="return validate()"> 
-            	<label>Quantity:</label><br />
-                <input type="text" id="qu" /><br /> 
-                <label>Receiving Date:</label><br />
-                <input type="text" id="rd" /><br />
-                <label>Location Address:</label><br />
-                <input type="text" id="la" /><br />
-                <label>Account No:</label><br />
-                <input type="text" id="an" />
-            </form>
-            	</div>
-                </div>
-                <div class="col-md-6" align="left">
-                    <div class="thumbnail">
-                    
-                    <img src="img/item11.jpg" alt="...">
-                    <a class="btn btn-primary col-xs-12" role="button">Flower boquet with box<br />
-                    Price:$3000</a>
-                    <div class="clearfix"></div>
-           </div>
-        </div>
-        <div class="regBtn" align="center">
-            <button type="submit"  value="Purchase" class="text-uppercase button" onClick="self.location='thankyou.html'"><strong>Purchase</strong></button><br /><br />
+  		
+        <div class="formLogin" align="center">
+        	 <div class="container">
+      			<div class="row">
+                    <div class="col-md-12" align="center">
+                		<img src="img/thank.jpg" " class="img-responsive" width="800"/>
+        			</div>
+            
+       		 	
             </div>
-       </div>
-      </div>      
-         
+            </div>
+            
+           
+        </div>
   </div>
-   <!--end of content2-->  
+   <!--end of content2-->
+    
  <!--start of content6--> 
 <div class="content6" id="con6">
 	<div class="container">

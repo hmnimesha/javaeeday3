@@ -13,11 +13,12 @@
 	background-image:url(../img/trance2.png);
 	margin-left:4em;
 	margin-right:4em;
-	padding-top:2em;
+	padding-top:4em;
+
 		
 }
 
-.login{
+.thank{
 	padding-left:2em;
 	font-family:"Arial Black", Gadget, sans-serif;
 	font-size:40px;
@@ -43,7 +44,7 @@
 	color:#9c0ed4;	
 }
 
-.purchaseForm{
+.formReg{
 	background-image:url(../img/trance1.png);
 	margin-left:2em;
 	margin-right:2em;
